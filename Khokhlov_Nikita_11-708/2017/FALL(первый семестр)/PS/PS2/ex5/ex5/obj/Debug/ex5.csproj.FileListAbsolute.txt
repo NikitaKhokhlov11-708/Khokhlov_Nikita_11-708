@@ -1,0 +1,7 @@
+C:\git\2017\FALL(первый семестр)\PS\PS2\ex5\ex5\bin\Debug\ex5.exe.config
+C:\git\2017\FALL(первый семестр)\PS\PS2\ex5\ex5\bin\Debug\ex5.exe
+C:\git\2017\FALL(первый семестр)\PS\PS2\ex5\ex5\bin\Debug\ex5.pdb
+C:\git\2017\FALL(первый семестр)\PS\PS2\ex5\ex5\obj\Debug\ex5.csprojResolveAssemblyReference.cache
+C:\git\2017\FALL(первый семестр)\PS\PS2\ex5\ex5\obj\Debug\ex5.csproj.CoreCompileInputs.cache
+C:\git\2017\FALL(первый семестр)\PS\PS2\ex5\ex5\obj\Debug\ex5.exe
+C:\git\2017\FALL(первый семестр)\PS\PS2\ex5\ex5\obj\Debug\ex5.pdb

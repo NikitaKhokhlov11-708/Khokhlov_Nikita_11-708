@@ -1,0 +1,7 @@
+C:\Users\Никита\source\repos\ex4\ex4\bin\Debug\ex4.exe.config
+C:\Users\Никита\source\repos\ex4\ex4\bin\Debug\ex4.exe
+C:\Users\Никита\source\repos\ex4\ex4\bin\Debug\ex4.pdb
+C:\Users\Никита\source\repos\ex4\ex4\obj\Debug\ex4.csprojResolveAssemblyReference.cache
+C:\Users\Никита\source\repos\ex4\ex4\obj\Debug\ex4.csproj.CoreCompileInputs.cache
+C:\Users\Никита\source\repos\ex4\ex4\obj\Debug\ex4.exe
+C:\Users\Никита\source\repos\ex4\ex4\obj\Debug\ex4.pdb

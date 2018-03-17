@@ -1,0 +1,7 @@
+C:\Users\Nikita\source\repos\SEM1\SEM1\bin\Debug\SEM1.exe.config
+C:\Users\Nikita\source\repos\SEM1\SEM1\bin\Debug\SEM1.exe
+C:\Users\Nikita\source\repos\SEM1\SEM1\bin\Debug\SEM1.pdb
+C:\Users\Nikita\source\repos\SEM1\SEM1\obj\Debug\SEM1.csprojResolveAssemblyReference.cache
+C:\Users\Nikita\source\repos\SEM1\SEM1\obj\Debug\SEM1.csproj.CoreCompileInputs.cache
+C:\Users\Nikita\source\repos\SEM1\SEM1\obj\Debug\SEM1.exe
+C:\Users\Nikita\source\repos\SEM1\SEM1\obj\Debug\SEM1.pdb
