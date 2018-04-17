@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,20 +11,18 @@ namespace RadixSort
     {
         static void Main(string[] args)
         {
-            string[] input = new string[10];
-            for (int i = 0; i < 10; i++)
+            string[] input = File.ReadAllText("50000.txt").Split();
+            for (int i = 0; i < input.Length; i++)
             {
-                string num = Console.ReadLine();
-                if (num.Length < 6)
-                    for (int j = 0; j < 6 - num.Length; j++)
-                        input[i] += 0;
-                input[i] += num;
+                if (input[i].Length < 6)
+                    for (int j = 0; j < 6 - input[i].Length; j++)
+                        input[i] = input[i].Insert(0, " ");
             }
-            Console.WriteLine();
+            System.Diagnostics.Stopwatch myStopwatch = new System.Diagnostics.Stopwatch();
+            myStopwatch.Start();
             Sort(input);
-            Console.WriteLine("Sorted:");
-            foreach (string element in input)
-                Console.WriteLine(element);
+            myStopwatch.Stop();
+            Console.WriteLine(myStopwatch.ElapsedMilliseconds.ToString());
         }
 
         public static void Sort(string[] a)
