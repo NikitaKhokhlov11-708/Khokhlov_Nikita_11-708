@@ -1,0 +1,7 @@
+C:\Users\Nikita\source\repos\BubbleSort\BubbleSort\bin\Debug\BubbleSort.exe.config
+C:\Users\Nikita\source\repos\BubbleSort\BubbleSort\bin\Debug\BubbleSort.exe
+C:\Users\Nikita\source\repos\BubbleSort\BubbleSort\bin\Debug\BubbleSort.pdb
+C:\Users\Nikita\source\repos\BubbleSort\BubbleSort\obj\Debug\BubbleSort.csprojResolveAssemblyReference.cache
+C:\Users\Nikita\source\repos\BubbleSort\BubbleSort\obj\Debug\BubbleSort.csproj.CoreCompileInputs.cache
+C:\Users\Nikita\source\repos\BubbleSort\BubbleSort\obj\Debug\BubbleSort.exe
+C:\Users\Nikita\source\repos\BubbleSort\BubbleSort\obj\Debug\BubbleSort.pdb

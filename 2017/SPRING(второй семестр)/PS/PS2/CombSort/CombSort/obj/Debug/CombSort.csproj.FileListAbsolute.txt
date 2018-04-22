@@ -1,0 +1,7 @@
+C:\Users\Nikita\source\repos\CombSort\CombSort\bin\Debug\CombSort.exe.config
+C:\Users\Nikita\source\repos\CombSort\CombSort\bin\Debug\CombSort.exe
+C:\Users\Nikita\source\repos\CombSort\CombSort\bin\Debug\CombSort.pdb
+C:\Users\Nikita\source\repos\CombSort\CombSort\obj\Debug\CombSort.csprojResolveAssemblyReference.cache
+C:\Users\Nikita\source\repos\CombSort\CombSort\obj\Debug\CombSort.csproj.CoreCompileInputs.cache
+C:\Users\Nikita\source\repos\CombSort\CombSort\obj\Debug\CombSort.exe
+C:\Users\Nikita\source\repos\CombSort\CombSort\obj\Debug\CombSort.pdb

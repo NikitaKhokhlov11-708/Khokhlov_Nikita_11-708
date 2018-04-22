@@ -11,26 +11,34 @@ namespace RadixSort
     {
         static void Main(string[] args)
         {
-            string[] input = File.ReadAllText("50000.txt").Split();
+            // Считывание массива с файла
+            string[] input = File.ReadAllText("1000.txt").Split();
+        
+            // Добавление 0 в начало, если кол-во разрядов числе меньше максимального
             for (int i = 0; i < input.Length; i++)
             {
                 if (input[i].Length < 6)
                     for (int j = 0; j < 6 - input[i].Length; j++)
                         input[i] = input[i].Insert(0, " ");
             }
+
             System.Diagnostics.Stopwatch myStopwatch = new System.Diagnostics.Stopwatch();
             myStopwatch.Start();
             Sort(input);
             myStopwatch.Stop();
+
             Console.WriteLine(myStopwatch.ElapsedMilliseconds.ToString());
+            File.WriteAllText("res.txt", string.Join("", input));
         }
 
+ 
         public static void Sort(string[] a)
         {
             string[] aux = new string[a.Length];
             Sort(a, aux, 0, a.Length - 1, 0);
         }
 
+        // Основной метод сортировки RadixSort
         private static void Sort(string[] a, string[] aux, int lo, int hi, int d)
         {
             if (lo >= hi) return;
