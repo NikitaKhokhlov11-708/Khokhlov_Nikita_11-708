@@ -1,0 +1,7 @@
+C:\Users\Nikita\source\repos\FSA\FSA\bin\Debug\FSA.exe.config
+C:\Users\Nikita\source\repos\FSA\FSA\bin\Debug\FSA.exe
+C:\Users\Nikita\source\repos\FSA\FSA\bin\Debug\FSA.pdb
+C:\Users\Nikita\source\repos\FSA\FSA\obj\Debug\FSA.csprojResolveAssemblyReference.cache
+C:\Users\Nikita\source\repos\FSA\FSA\obj\Debug\FSA.csproj.CoreCompileInputs.cache
+C:\Users\Nikita\source\repos\FSA\FSA\obj\Debug\FSA.exe
+C:\Users\Nikita\source\repos\FSA\FSA\obj\Debug\FSA.pdb
