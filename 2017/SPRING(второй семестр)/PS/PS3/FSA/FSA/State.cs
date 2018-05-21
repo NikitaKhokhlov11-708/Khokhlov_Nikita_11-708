@@ -7,10 +7,21 @@ using System.Threading.Tasks;
 namespace FSA
 {
     // Класс сосстояния
-    class State
+    public class State
     {
-        public int id; // Порядковый номер состояния
-        public Dictionary<char, State> transitions; // Словарь переходов между состояниями под действием символа
-        public bool isAcceptState; // Является ли состояние допускающим
+        public int ID { get; set; } = -1; // Порядковый номер состояния
+        public Dictionary<char, State> Transitions { get; set; } = new Dictionary<char, State>(); // Словарь переходов между состояниями под действием символа
+        public bool IsAcceptState { get; set; } = false;// Является ли состояние допускающим
+
+        public State(int id)
+        {
+            ID = id;
+        }
+
+        // Метод добавления функции перехода к следующему состоянию
+        public void AddTransition(char a, State s)
+        {
+            Transitions.Add(a, s);
+        }
     }
 }

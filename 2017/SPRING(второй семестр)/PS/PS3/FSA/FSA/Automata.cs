@@ -7,17 +7,18 @@ using System.Threading.Tasks;
 namespace FSA
 {
     // Класс Дет. Конечного Автомата
-    class Automata
+    public class Automata
     {
-        public static List<State> states; // Список всех состояний. По умолчанию начальное состояние - 0
-        public static int numOfStates = 0; // Количество состояний
-        public static List<Tuple<int, int>> edges; // Список ребер между состояниями
-        public static char[] alph; // Алфавит (массив символов алфавита)
+        static List<State> states = new List<State>(); // Список всех состояний. По умолчанию начальное состояние - 0
+        static int numOfStates = 0; // Количество состояний
+        static List<Tuple<int, int>> edges = new List<Tuple<int, int>>(); // Список ребер между состояниями
+        static char[] alph; // Алфавит (массив символов алфавита)
 
 
         // Метод создания автомата с вводом параметров
         public void CreateAutomata()
         {
+            State[] arr = new State[3];
             Console.Write("Введите все символы алфавита: ");
             alph = Console.ReadLine().ToCharArray();
 
@@ -26,24 +27,20 @@ namespace FSA
 
             for (int i = 0; i < numOfStates; i++)
             {
-                states.Add(
-                    new State
-                    {
-                        id = i
-                    });
+                AddState(i);
             }
 
             foreach (var state in states)
             {
-                Console.Write("Является ли состояние " + state.id + " допускающим? ");
+                Console.Write("Является ли состояние " + state.ID + " допускающим? ");
                 switch (Console.ReadLine())
                 {
                     case "Да":
-                        state.isAcceptState = true;
+                        state.IsAcceptState = true;
                         break;
 
                     case "Нет":
-                        state.isAcceptState = false;
+                        state.IsAcceptState = false;
                         break;
                 }
 
@@ -51,9 +48,9 @@ namespace FSA
                 {
                     Console.Write("Введите номер состояния, на который осуществляется переход под действием символа " + letter + ": ");
                     int nextState = int.Parse(Console.ReadLine());
-                    state.transitions.Add(letter, states.Where(s => s.id == nextState).ToList()[0]);
-                    if (nextState != state.id && !edges.Contains(new Tuple<int, int>(state.id, nextState)))
-                        edges.Add(new Tuple<int, int>(state.id, nextState));
+                    state.AddTransition(letter, states.Where(s => s.ID == nextState).ToList()[0]);
+                    if (nextState != state.ID && !edges.Contains(new Tuple<int, int>(state.ID, nextState)))
+                        edges.Add(new Tuple<int, int>(state.ID, nextState));
                 }
             }
         }
@@ -65,12 +62,12 @@ namespace FSA
             State current = states[0];
             foreach (var c in s)
             {
-                if (current.transitions.ContainsKey(c))
+                if (current.Transitions.ContainsKey(c))
                 {
-                    current = current.transitions[c];
+                    current = current.Transitions[c];
                 }
             }
-            return current.isAcceptState;
+            return current.IsAcceptState;
         }
 
         // Метод нахождения длины минимального пути между начальным и конкретным конечным состоянием
@@ -104,9 +101,9 @@ namespace FSA
         public int ShortestWord()
         {
             List<int> minLength = new List<int>();
-            List<State> finiteStates = states.Where(s => s.isAcceptState == true).ToList();
+            List<State> finiteStates = states.Where(s => s.IsAcceptState == true).ToList();
             foreach (var state in finiteStates)
-                minLength.Add(ShortestPath(edges, state.id));
+                minLength.Add(ShortestPath(edges, state.ID));
 
             return minLength.Min();
         }
@@ -141,6 +138,17 @@ namespace FSA
 
             return GetAllCombinations(list, length - 1)
                 .SelectMany(t => list, (t1, t2) => t1.Concat(new T[] { t2 }));
+        }
+
+        // Метод добавления нового состояния в автомат без переходов
+        public void AddState(int id)
+        {
+            states.Add(new State(id));
+        }
+
+        public State ReturnStateByID(int id)
+        {
+            return states.Where(s => s.ID == id).ToList()[0];
         }
     }
 }

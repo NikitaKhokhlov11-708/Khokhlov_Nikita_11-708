@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSA", "FSA\FSA.csproj", "{78087850-FC5A-4960-A21C-5DE695E9226C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSA.Tests", "FSA.Tests\FSA.Tests.csproj", "{F8FCC8D8-E83C-4A44-8CB0-9B607E99BE41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{78087850-FC5A-4960-A21C-5DE695E9226C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78087850-FC5A-4960-A21C-5DE695E9226C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78087850-FC5A-4960-A21C-5DE695E9226C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8FCC8D8-E83C-4A44-8CB0-9B607E99BE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8FCC8D8-E83C-4A44-8CB0-9B607E99BE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8FCC8D8-E83C-4A44-8CB0-9B607E99BE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8FCC8D8-E83C-4A44-8CB0-9B607E99BE41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
